@@ -1,0 +1,111 @@
+:root{
+    --english-font:'Josefin Sans', sans-serif;
+    --dark-color:rgb(3, 38, 12);
+}
+*{
+    text-align: center;
+}
+body{
+    margin: 0 auto;
+}
+h1, p, h2{
+    color: #fff;
+    font-family: var(--english-font);
+}
+h1{
+    padding: 20px 0 0 0;
+}
+h2{
+    padding: 0 0 20px 0;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.border{
+    margin: 80px 0;
+}
+.bg-animation {
+    padding: 70px 60px;
+    background: linear-gradient(243deg, #00795a, #343f32, #49873e, #16b4a7);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 11s ease infinite;
+    -moz-animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite;
+}
+.top{
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+.cover-img{
+    height: 100%;
+    object-fit: cover;
+}
+.bottom-img{
+    filter: blur(10px);
+}
+.picture{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    margin-top: -50px;
+}
+.profile-picture{
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 12%);
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.card-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 800px;
+}
+.card p, h5{
+    color:var(--dark-color);
+    text-align: left;
+}
+.cardimg img{
+    height: 180px;
+    width: 300px;
+    object-fit: cover;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+@media (max-width:1080px) {
+    .top{
+        height: 170px;
+    }
+    .card{
+        width: 400px;
+    }
+    .cardimg img{
+        width: auto;
+    }
+}
