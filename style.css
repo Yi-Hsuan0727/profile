@@ -85,9 +85,6 @@ a{
     display: flex;
     flex-direction: column;
 }
-.owl-theme .item {
-    height: 500px;
-}
 .owl-theme .item img{
     object-fit: cover;
     height: 500px;
@@ -128,5 +125,9 @@ a{
     }
     .card-body{
         padding: 10px !important;
+    }
+    .owl-theme .item img{
+        object-fit: cover;
+        height: 300px;
     }
 }
