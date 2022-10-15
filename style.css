@@ -85,6 +85,13 @@ a{
     display: flex;
     flex-direction: column;
 }
+.owl-theme .item {
+    height: 500px;
+}
+.owl-theme .item img{
+    object-fit: cover;
+    height: 500px;
+}
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 81%}
     50%{background-position:100% 20%}
