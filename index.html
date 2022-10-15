@@ -14,27 +14,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="top">
+        <div class="top" data-aos="zoom-in" data-aos-duration="800">
             <img alt="Cover" src="https://media.bio.site/sites/9083CD30-F272-4D00-8858-17DC1E9350A0/tDX9ZtXcoExs5STmL8kcUT.png" class="cover-img" width="100%">
         </div>
-        <div class="picture">
+        <div class="picture" data-aos="zoom-in" data-aos-duration="2000">
             <img alt="Profile" class="profile-picture" src="https://media.bio.site/sites/9083CD30-F272-4D00-8858-17DC1E9350A0/98EPEUZeL6DTM4obHVTuiC.png" width="100" height="100">
         </div>
     </header>
     <main>
         <div class="bg-animation">
-            <h1>Yi Hsuan, Chen's Profile</h1>
-            <p>UI/UX & Website Designer</p>
+            <h1 data-aos="zoom-in" data-aos-duration="800">Yi Hsuan, Chen's Profile</h1>
+            <p data-aos="zoom-in" data-aos-duration="800"> UI/UX & Website Designer</p>
             <!-- WEBSITE LINK -->
             <hr class="border border-1 opacity-75">
             <h2>Website Projects</h2>
             <div class="card-list">
-                <div class="card">
-                    <div class="row g-0" href="https://wei-backery.com/">
+                <div class="card" data-aos="flip-left" data-aos-duration="800">
+                    <div class="row g-0">
                     <div class="cardimg">
                         <img src="images/275196405_130392216175907_5489500955599530248_n.jpg" class="card-img-top" alt="麵包坊">
                     </div>
@@ -46,8 +48,8 @@
                     </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="row g-0" href="https://yi-hsuan0727.github.io/connie/">
+                <div class="card" data-aos="flip-left" data-aos-duration="800">
+                    <div class="row g-0">
                     <div class="cardimg">
                         <img src="images/topimg.jpg" class="card-img-top" alt="麵包坊">
                     </div>
@@ -55,12 +57,12 @@
                     <h5 class="card-title">英語補習班官方網站</h5>
                     <p class="card-text">使用工具：html/css, javascript, jQuery</p>
                     <p class="card-text"><small class="text-muted">Website Design</small></p>
-                    <a href="https://wei-backery.com/" class="btn btn-outline-success">view</a>                
+                    <a  href="https://yi-hsuan0727.github.io/connie/" class="btn btn-outline-success">view</a>                
                     </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="row g-0" href="https://www.figma.com/proto/liiY3uuAuqkyhPUDgfMtSk/longtan?page-id=0%3A1&node-id=3%3A2&viewport=-1642%2C-341%2C1&scaling=scale-down&starting-point-node-id=90%3A2589&show-proto-sidebar=1">
+                <div class="card" data-aos="flip-left" data-aos-duration="800">
+                    <div class="row g-0">
                     <div class="cardimg">
                         <img src="https://media.bio.site/sites/9083CD30-F272-4D00-8858-17DC1E9350A0/tDX9ZtXcoExs5STmL8kcUT.png" class="card-img-top" alt="麵包坊">
                     </div>
@@ -68,7 +70,7 @@
                         <h5 class="card-title">App Ui/Ux 設計</h5>
                         <p class="card-text">使用工具：illustrator, photoshop, figma</p>
                         <p class="card-text"><small class="text-muted">Ui/Ux Design</small></p>
-                        <a href="https://wei-backery.com/" class="btn btn-outline-success">view</a>                
+                        <a href="https://www.figma.com/proto/liiY3uuAuqkyhPUDgfMtSk/longtan?page-id=0%3A1&node-id=3%3A2&viewport=-1642%2C-341%2C1&scaling=scale-down&starting-point-node-id=90%3A2589&show-proto-sidebar=1" class="btn btn-outline-success">view</a>                
                         </div>
                         </div>
                 </div>
@@ -82,6 +84,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

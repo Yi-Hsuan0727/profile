@@ -102,7 +102,7 @@ a{
 }
 @media (max-width:1080px) {
     h5{
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .card-body p{
         font-size: 12px;
@@ -111,15 +111,15 @@ a{
         height: 170px;
     }
     .bg-animation{
-        padding: 70px 0;
+        padding: 70px 20px;
     }
     .card-list{
-        margin: 0 5px;
+        margin: 0;
     }
     .card{
         margin: 0 5px;
     }
     .card-body{
-        padding: 5px;
+        padding: 10px !important;
     }
 }
