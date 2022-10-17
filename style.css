@@ -47,9 +47,6 @@ table {
     --english-font-sans-serif: 'Lato', sans-serif;
     --dark-color:rgb(3, 38, 32);
 }
-*{
-    text-align: center;
-}
 body{
     margin: 0 auto;
 }
@@ -58,15 +55,19 @@ p{
     font-family: var(--english-font-sans-serif);
 }
 h1{
+    text-align: center;
     padding: 20px 0 0 0;
     font-family: var(--english-font-sans-serif-title);
     color: var(--dark-color);
     font-size: 26px;
 }
+h1 + p{
+    text-align: center;
+}
 h2{
     color: #fff;
     padding: 60px 0 20px 0;
-    font-family: var(--english-font-sans-serif-title);
+    font-family:  "微軟正黑體", sans-serif;
 }
 h3{
     color: #fff;
@@ -83,9 +84,9 @@ a{
     padding: 70px 60px;
     background: linear-gradient(243deg, #00795a, #16b4a7, #388583, #7ed16f);
     background-size: 800% 800%;
-    -webkit-animation: AnimationName 11s ease infinite;
+    /* -webkit-animation: AnimationName 11s ease infinite;
     -moz-animation: AnimationName 11s ease infinite;
-    animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite; */
 }
 .contact-list a{
     color: #fff;
@@ -125,28 +126,31 @@ a{
     display: flex;
     justify-content: center;
 }
-.website-projects{
-    background: #fff;
+section{
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
     box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
     margin: 30px 0;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
+    border-left: #fff solid 10px;
 }
-.website-projects h2{
-    background: linear-gradient(243deg, #00795a, #16b4a7, #388583, #7ed16f);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    padding: 20px 20px;
+section h2{
+    padding: 20px 0 0 0;
+}
+section p{
+    color: #fff;
 }
 .card-list{
     display: flex;
     justify-content: center;
-    margin: 0 50px ;
+    margin: 50px ;
 }
 .card{
-    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
-    margin: 20px 5px 0 5px;
+    /* box-shadow: 0px 2px 15px rgb(0 0 0 / 10%); */
+    border: none;
 }
 .card p, h5{
     color:var(--dark-color);
@@ -154,22 +158,65 @@ a{
 }
 .cardimg img{
     object-fit: cover;
-    height: 150px;
+    height: 250px;
     width: 100%;
 }
 .card-body{
     display: flex;
     flex-direction: column;
 }
+#prototype{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.prototype-animation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.prototype-content{
+    height: 100%;
+    width: 80vw;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+.prototype-content h3{
+    background: linear-gradient(243deg, #00795a, #16b4a7, #388583, #7ed16f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.prototype-content p, .prototype-content h3{
+    text-align: left;
+    font-family: "微軟正黑體", sans-serif;
+    padding: 10px 0;
+}
+.prototype-content a{
+    width: 12rem;
+    white-space: nowrap;
+    margin: 20px 0;
+}
+.owl-theme {
+    margin: 20px 0;
+}
 .owl-theme .item img{
     object-fit: cover;
-    height: 500px;
+    height: 400px;
 }
 .container {
     width: 100%; /* Full width */
     background-color: #ddd; /* Grey background */
   }
-.s
   
 .skills {
 text-align: right; /* Right-align text */
@@ -198,12 +245,12 @@ color: white; /* White text color */
     50%{background-position:100% 20%}
     100%{background-position:0% 81%}
 }
-@media (max-width:1080px) {
+@media (max-width:768px) {
     h5{
         font-size: 16px !important;
     }
     .card-body p{
-        font-size: 12px;
+        line-height: 1.2;
     }
     .top{
         height: 170px;
@@ -217,11 +264,18 @@ color: white; /* White text color */
     .card-list{
         margin: 0;
     }
-    .card{
-        margin: 0 5px;
-    }
     .card-body{
         padding: 10px !important;
+    }
+    #prototype{
+        flex-direction: column;
+        height: auto;
+    }
+    .prototype-content{
+        padding: 20px;
+    }
+    .prototype-content p{
+        font-size: 14px;
     }
     .owl-theme .item img{
         object-fit: cover;
