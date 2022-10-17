@@ -168,6 +168,9 @@ h3 {
     font-family: var(--english-font-sans-serif-title);
 }
 
+h4{
+    font-size: 16px !important;
+}
 a {
     text-decoration: none;
     display: block;
@@ -181,6 +184,8 @@ a:hover{
     padding: 70px 60px;
     background: linear-gradient(243deg, #00795a, #16b4a7, #388583, #7ed16f);
     background-size: 800% 800%;
+    border-left: solid 60px var(--dark-color);
+    box-sizing: border-box;
     /* -webkit-animation: AnimationName 11s ease infinite;
     -moz-animation: AnimationName 11s ease infinite;
     animation: AnimationName 11s ease infinite; */
@@ -196,7 +201,7 @@ nav {
 
 nav div {
     position: absolute;
-    top: 20%;
+    top: -2%;
     transform: translateY(-50%);
 }
 
@@ -204,20 +209,20 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     display: block;
-    border: solid 1px rgba(0, 0, 0, 0);
+    border: solid 1px var(--dark-color);
     margin: 15px;
     padding: 5px;
-    color: #efefef;
+    color: #fff;
     -webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
 }
 nav a:hover{
-    border-left: 1px solid #fff;
+    border-left: 1px solid #F9D262;
 }
 
 .active{
-    border-left: 1px solid #fff;
-    color: var(--dark-color);
+    border-left: 1px solid #F9D262;
+    color: #F9D262;
 }
 
 .contact-list a {
@@ -296,7 +301,7 @@ section p {
     margin-right: 20px;
 }
 .about-1, .experience{
-    margin: 6px 0 20px 20px;
+    margin: 6px 0 0 20px;
     width: 100%;
 }
 .skill-list, .experience, .certification, .intro{
@@ -361,8 +366,10 @@ section p {
     width: 40%;
     background-color: #808080;
 }
-.certification ul li{
+.certification ul li, .list-group-item{
     background: transparent;
+    padding: 5px !important;
+    font-size: 14px;
 }
 .experience ul li{
     padding: 15px !important;
@@ -416,6 +423,13 @@ li.timeline-item::before {
     height: 14px;
     z-index: 400;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.small{
+    color: grey;
+    font-size: 11px !important;
+}
+.timeline-item p{
+    font-size: 14px;
 }
 .experience .card{
     padding: 0;
@@ -505,7 +519,13 @@ h5 {
     object-fit: cover;
     height: 400px;
 }
-
+.end{
+    text-align: center;
+}
+.end p{
+    font-weight: bold;
+    padding: 20px;
+}
 
 @-webkit-keyframes AnimationName {
     0% {
@@ -561,6 +581,9 @@ h5 {
         padding: 12px;
         margin-bottom: 20px; 
     }
+    nav div{
+        top: 15%;
+    }
     nav a{
         margin: 10px 10px 10px 5px;
         padding: 3px;
@@ -592,7 +615,8 @@ h5 {
     }
 
     .bg-animation {
-        padding: 70px 10px 10px 40px;
+        padding: 70px 10px 10px 10px;
+        border-left: solid 40px var(--dark-color);
     }
 
     .contact-list a {
