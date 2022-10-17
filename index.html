@@ -174,33 +174,104 @@
             <!-- About me -->
             <div id="aboutMe">
                 <h2>About Me</h2>
-                <hr class="border border-1 opacity-75">
-                <div class="skill-list">
-                    <h3>Skills</h3>
-                    <p>HTML</p>
-                    <div class="container">
-                        <div class="skills html">90%</div>
-                    </div>
+                <div class="about-1">
+                    <div class="skill-list">
+                        <h3>Skills</h3>
+                        <p>HTML/CSS</p>
+                        <div class="container">
+                            <div class="skills html-css">60%</div>
+                        </div>
 
-                    <p>CSS</p>
-                    <div class="container">
-                        <div class="skills css">80%</div>
-                    </div>
+                        <p>Bootstrap</p>
+                        <div class="container">
+                            <div class="skills bootstrap">50%</div>
+                        </div>
 
-                    <p>JavaScript</p>
-                    <div class="container">
-                        <div class="skills js">65%</div>
+                        <p>JavaScript</p>
+                        <div class="container">
+                            <div class="skills js">30%</div>
+                        </div>
+                        <p>Illustrator</p>
+                        <div class="container">
+                            <div class="skills ai">80%</div>
+                        </div>
+                        <p>Photoshop</p>
+                        <div class="container">
+                            <div class="skills ps">70%</div>
+                        </div>
+                        <p>Figma</p>
+                        <div class="container">
+                            <div class="skills figma">70%</div>
+                        </div>
+                        <p>jQuery</p>
+                        <div class="container">
+                            <div class="skills jquery">40%</div>
+                        </div>
                     </div>
-
-                    <p>PHP</p>
-                    <div class="container">
-                        <div class="skills php">60%</div>
+                    <div class="certification">
+                        <h3>Certification</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">freeCodeCamp.org—Responsive Web Design(RWD) Developer
+                                Certification</li>
+                            <li class="list-group-item">TOEIC TOTAL SCORE 905 (L:495 R:410)</li>
+                            <li class="list-group-item">(MOS) Microsoft Office Specialist for Office Word 2016 Expert
+                            </li>
+                            <li class="list-group-item">(MOS) Microsoft Office Specialist for Office Access 2016</li>
+                            <li class="list-group-item">(MOS) Microsoft Office Specialist for Office Excel 2016 Expert
+                            </li>
+                        </ul>
                     </div>
-                    <br><br>
-                    <h3>language</h3>
                 </div>
                 <div class="experience">
-                    <h3></h3>
+                    <h3>Experience</h3>
+                    <ul class="timeline">
+                        <li class="timeline-item bg-white rounded p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h4 class="h5 mb-0">Freelancer</h4><span class="small text-gray"><i
+                                    class="fa fa-clock-o mr-1"></i>1 May, 2022</span>
+                            <p class="text-small mt-2 font-weight-light">網路接案，並同時利用線上課程自我進修。
+                            </p>
+                            <p>
+                                <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    經驗與成果
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">製作2個專案</li>
+                                        <li class="list-group-item">A second item</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="timeline-item bg-white rounded p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h4 class="h5 mb-0">天翌管理顧問有限公司--活動企劃/美宣</h4><span class="small text-gray"><i
+                                    class="fa fa-clock-o mr-1"></i>31 Feb., 2022</span>
+                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
+                        </li>
+                        <li class="timeline-item bg-white rounded p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h4 class="h5 mb-0">英國大雅茅斯保存協會--計畫助理</h4><span class="small text-gray"><i
+                                    class="fa fa-clock-o mr-1"></i>18 August, 2019</span>
+                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.
+                                Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                        </li>
+                        <li class="timeline-item bg-white rounded p-4 shadow">
+                            <div class="timeline-arrow"></div>
+                            <h4 class="h5 mb-0"></h4><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10
+                                October, 2019</span>
+                            <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare.
+                                Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -251,7 +322,8 @@
         });
         const scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#navbar'
-        })
+        });
+
     </script>
 </body>
 
