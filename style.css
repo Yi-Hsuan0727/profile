@@ -176,9 +176,6 @@ a:hover{
     color: var(--dark-color) !important;
 }
 
-.border {
-    margin: 0 400px 40px 400px;
-}
 
 .bg-animation {
     padding: 70px 60px;
@@ -199,7 +196,7 @@ nav {
 
 nav div {
     position: absolute;
-    top: -5%;
+    top: 20%;
     transform: translateY(-50%);
 }
 
@@ -288,6 +285,142 @@ section p {
     color: #fff;
 }
 
+/* about */
+#aboutMe{
+    border-left: 10px solid #fff;
+    padding: 0 0 0 30px;
+    display: flex;
+}
+#aboutMe h2{
+    padding: 0;
+    margin-right: 20px;
+}
+.about-1, .experience{
+    margin: 6px 0 20px 20px;
+    width: 100%;
+}
+.skill-list, .experience, .certification, .intro{
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
+    border-radius: 10px;
+    padding: 20px;
+}
+.skill-list, .intro{
+    margin-bottom: 20px;
+}
+.container {
+    width: 100%;
+    background-color: #fff;
+    padding: 0 !important;
+    height: 1rem;
+    border-radius: 15px;
+}
+.skills {
+    font-size: 12px;
+    width: 20px;
+    height: 1rem;
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+.skill-list p{
+    margin: 10px 0 0 0;
+}
+.skill-list ul{
+    padding: 0;
+}
+.html-css {
+    width: 60%;
+    background-color: #3DAFA5;
+}
+.bootstrap{
+    width: 50%;
+    background-color: #E0647F;
+}
+.js {
+    width: 30%;
+    background-color: #faca3c;
+}
+.ai {
+    width: 80%;
+    background-color: #fa993d;
+}
+.ps{
+    width: 70%;
+    background-color: #2196F3;
+}
+.figma {
+    width: 70%;
+    background-color: #ae33db;
+}
+.jquery{
+    width: 40%;
+    background-color: #808080;
+}
+.certification ul li{
+    background: transparent;
+}
+.experience ul li{
+    padding: 15px !important;
+}
+.experience p{
+    margin: 0 0 10px 0;
+}
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    /* padding-left: 1.5rem; */
+}
+
+ /* Timeline vertical line */
+ul.timeline:before {
+    content: ' ';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem;
+}
+
+li.timeline-item {
+    margin: 20px 0;
+}
+
+/* Timeline item arrow */
+.timeline-arrow {
+    border-top: 0.5rem solid transparent;
+    border-right: 0.5rem solid #fff;
+    border-bottom: 0.5rem solid transparent;
+    display: block;
+    position: absolute;
+    left: 25px;
+}
+
+/* Timeline item circle marker */
+li.timeline-item::before {
+    content: ' ';
+    background: #ddd;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.experience .card{
+    padding: 0;
+}
+
 .card-list {
     display: flex;
     justify-content: center;
@@ -373,132 +506,6 @@ h5 {
     height: 400px;
 }
 
-#aboutMe{
-    border-left: 10px solid #fff;
-    padding: 0 0 0 30px;
-    display: flex;
-}
-#aboutMe h2{
-    padding: 0;
-    margin-right: 20px;
-}
-
-.about-1, .experience{
-    margin: 6px 0 0 20px;
-    width: 100%;
-}
-.skill-list, .experience, .certification{
-    background: rgba(255, 255, 255, 0.55);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    box-shadow: 0px 2px 15px rgb(0 0 0 / 40%);
-    border-radius: 10px;
-    padding: 20px;
-}
-.skill-list{
-    margin-bottom: 20px;
-}
-.container {
-    width: 100%;
-    background-color: #fff;
-    padding: 0 !important;
-    height: 1.5rem;
-    border-radius: 20px;
-}
-.skills {
-    width: 20px;
-    height: 1.5rem;
-    text-align: right;
-    color: white;
-    padding-right: 10px;
-    border-radius: 20px;
-}
-.skill-list p{
-    margin: 10px 0 0 0;
-}
-.skill-list ul{
-    padding: 0;
-}
-.html-css {
-    width: 60%;
-    background-color: #04AA6D;
-}
-.bootstrap{
-    width: 50%;
-    background-color: #04AA6D;
-}
-.js {
-    width: 30%;
-    background-color: #f44336;
-}
-.ai {
-    width: 80%;
-    background-color: #2196F3;
-}
-.ps{
-    width: 70%;
-    background-color: #2196F3;
-}
-.figma {
-    width: 70%;
-    background-color: #808080;
-}
-.jquery{
-    width: 40%;
-    background-color: #808080;
-}
-.certification ul li{
-    background: transparent;
-}
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-    /* padding-left: 1.5rem; */
-}
-
- /* Timeline vertical line */
-ul.timeline:before {
-    content: ' ';
-    background: #fff;
-    display: inline-block;
-    position: absolute;
-    left: 16px;
-    width: 4px;
-    height: 100%;
-    z-index: 400;
-    border-radius: 1rem;
-}
-
-li.timeline-item {
-    margin: 20px 0;
-}
-
-/* Timeline item arrow */
-.timeline-arrow {
-    border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid #fff;
-    border-bottom: 0.5rem solid transparent;
-    display: block;
-    position: absolute;
-    left: 25px;
-}
-
-/* Timeline item circle marker */
-li.timeline-item::before {
-    content: ' ';
-    background: #ddd;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #fff;
-    left: 11px;
-    width: 14px;
-    height: 14px;
-    z-index: 400;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
 
 @-webkit-keyframes AnimationName {
     0% {
@@ -550,12 +557,32 @@ li.timeline-item::before {
     .picture{
         padding-left: 2rem;
     }
-
+    .contact-list a {
+        padding: 12px;
+        margin-bottom: 20px; 
+    }
     nav a{
-        margin: 10px 10px 10px 15px;
+        margin: 10px 10px 10px 5px;
         padding: 3px;
+        font-size: 14px;
+    }
+    section{
+        border-left: #fff solid 5px;
+        padding: 15px;
     }
 
+    #aboutMe{
+        flex-direction: column;
+        padding-left: 15px;
+        border-left: 5px solid #fff;
+
+    }
+    .about-1{
+        margin: 0 0 20px 0;
+    }
+    .experience{
+        margin: 0;
+    }
     .card-body p {
         line-height: 1.2;
     }
@@ -565,7 +592,7 @@ li.timeline-item::before {
     }
 
     .bg-animation {
-        padding: 70px 10px 70px 60px;
+        padding: 70px 10px 10px 40px;
     }
 
     .contact-list a {
@@ -596,12 +623,5 @@ li.timeline-item::before {
     .owl-theme .item img {
         object-fit: cover;
         height: 300px;
-    }
-    #aboutMe{
-        flex-direction: column;
-        
-    }
-    .skill-list, .experience{
-        margin: 6px 0 0 0;
     }
 }
