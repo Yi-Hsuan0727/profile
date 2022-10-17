@@ -131,7 +131,7 @@ table {
 }
 
 :root {
-    --english-font-sans-serif-title: 'Bodoni Moda', serif;
+    --english-font-sans-serif-title: 'Raleway', sans-serif;
     --english-font-sans-serif: 'Lato', sans-serif;
     --dark-color: rgb(3, 38, 32);
 }
@@ -186,9 +186,9 @@ a:hover{
     background-size: 800% 800%;
     border-left: solid 60px var(--dark-color);
     box-sizing: border-box;
-    -webkit-animation: AnimationName 11s ease infinite;
+    /* -webkit-animation: AnimationName 11s ease infinite;
     -moz-animation: AnimationName 11s ease infinite;
-    animation: AnimationName 11s ease infinite;
+    animation: AnimationName 11s ease infinite; */
 }
 
 /* nav */
@@ -523,8 +523,7 @@ h5 {
 .end{
     text-align: center;
 }
-.end p{
-    font-weight: bold;
+.end h3{
     padding: 20px;
 }
 
