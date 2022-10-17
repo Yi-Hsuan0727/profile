@@ -38,7 +38,9 @@
                 width="100" height="100">
         </div>
     </header>
-    <main>
+
+    <main data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" data-bs-smooth-scroll="true"
+        class="scrollspy-example" tabindex="0">
         <div class="bg-animation">
             <h1 data-aos="zoom-in" data-aos-duration="800">YI HSUAN, CHEN'S PROFILE</h1>
             <p data-aos="zoom-in" data-aos-duration="800"> Website & Ui/Ux Designer</p>
@@ -52,8 +54,17 @@
                 <a href="https://www.linkedin.com/in/yi-hsuan-chen-b57960213" target="_blank"><i
                         class="fa-brands fa-linkedin-in"></i></a>
             </div>
+            <!-- nav -->
+            <nav>
+                <div class="simple-list-example-scrollspy" id='#navbar'>
+                    <a href='#websiteProjects'>Projects</a>
+                    <a href='#prototype'>APP Design</a>
+                    <a href='#graphicDesign'>Graphic Design</a>
+                    <a href='#aboutMe'>About</a>
+                </div>
+            </nav>
             <!-- WEBSITE PROJECTS -->
-            <section id="website-projects">
+            <section id="websiteProjects">
                 <h2>網頁與介面設計作品</h2>
                 <p>Website & Ui/Ux Projects</p>
                 <div class="card-list row row-cols-1 row-cols-md-3 g-4">
@@ -64,7 +75,7 @@
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">麵包坊產品介紹網站</h5>
-                                <p class="card-text">使用工具：html/css, bootstrap</p><br>
+                                <p class="card-text">使用工具：html/css, bootstrap</p>
                                 <p class="card-text"><small class="text-muted">Website Design</small></p>
                                 <a href="https://wei-backery.com/" class="btn btn-outline-success" target="_blank">View
                                     the Website</a>
@@ -121,15 +132,14 @@
                     </div>
                     <div class="prototype-2">
                         <lottie-player src="https://lottie.host/b2f32a75-2e6b-4def-ab72-805d5d611116/MiqhSk8Z27.json"
-                        background="transparent" speed="1" autoplay>
-                    </lottie-player>
-                </div>
-                <div class="prototype-3">
-                    <lottie-player
-                        src="https://lottie.host/ac5be12a-3fdd-4410-8dea-ffbe427a49a3/mVgSxZDQaZ.json"
-                        background="transparent" speed="1" autoplay loop>
-                    </lottie-player>
-                </div>
+                            background="transparent" speed="1" autoplay>
+                        </lottie-player>
+                    </div>
+                    <div class="prototype-3">
+                        <lottie-player src="https://lottie.host/ac5be12a-3fdd-4410-8dea-ffbe427a49a3/mVgSxZDQaZ.json"
+                            background="transparent" speed="1" autoplay loop>
+                        </lottie-player>
+                    </div>
                 </div>
             </div>
 
@@ -162,9 +172,9 @@
                 </div>
             </section>
             <!-- About me -->
-            <h2>About Me</h2>
-            <hr class="border border-1 opacity-75">
-            <div class="about-me">
+            <div id="aboutMe">
+                <h2>About Me</h2>
+                <hr class="border border-1 opacity-75">
                 <div class="skill-list">
                     <h3>Skills</h3>
                     <p>HTML</p>
@@ -239,6 +249,9 @@
                 }
             );
         });
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbar'
+        })
     </script>
 </body>
 
